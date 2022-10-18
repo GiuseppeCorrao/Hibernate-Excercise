@@ -10,9 +10,9 @@ public class Enrollment {
     @Id
     private String id;
 
-    @JoinColumn(name = "student_id",referencedColumnName = "id")
+    @OneToMany
     Student student;
 
-    @JoinColumn(name = "classes_id",referencedColumnName = "id")
+    @OneToMany
     Classes classes;
 }
